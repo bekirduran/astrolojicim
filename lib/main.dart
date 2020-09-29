@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Modal/burc_listesi.dart';
+
+import 'View/burc_listesi.dart';
 
 void main() => runApp(BurcApp());
 
