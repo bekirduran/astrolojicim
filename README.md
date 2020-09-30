@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 # Screen Images
 
-![main screen](/ScreenImages/ss1.png){:height="700px" width="400px"}
+![](/ScreenImages/ss1.png) <img src=/ScreenImages/ss1.png width="100" height="100">
 
 
 
