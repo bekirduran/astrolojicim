@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 # Screen Images
 
-![](/ScreenImages/ss1.png)
+![](/ScreenImages/ss1.png){:height="50%" width="50%"}
 
 
 
