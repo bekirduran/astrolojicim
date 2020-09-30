@@ -19,3 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 # Screen Images
 
 ![](/ScreenImages/ss1.jpeg)
+
+![](/ScreenImages/ss2.jpeg)
+
+![](/ScreenImages/ss3.jpeg)
