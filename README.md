@@ -1,6 +1,7 @@
 # astrolojicim
 
-Burçlar ile ilgili
+This is a simple horoscope application written in flutter.
+(Burç'lar ile ilgili basit bilgiler içeren dart dilinde flutter ile yazulmış bir uygulamadır. MVC ve 3th part library içermektedir. )
 
 ## Getting Started
 
@@ -14,3 +15,11 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# Screen Images
+
+![](/ScreenImages/ss1.jpeg)
+
+![](/ScreenImages/ss2.jpeg)
+
+![](/ScreenImages/ss3.jpeg)
