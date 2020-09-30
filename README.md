@@ -18,12 +18,12 @@ samples, guidance on mobile development, and a full API reference.
 
 # Screen Images
 
-![](/ScreenImages/ss1.png){:height="50%" width="50%"}
+![main screen](/ScreenImages/ss1.png){:height="700px" width="400px"}
 
 
 
-![](/ScreenImages/ss2.png)
+![](/ScreenImages/ss2.png){:height="700px" width="400px"}
 
 
 
-![](/ScreenImages/ss3.png)
+![](/ScreenImages/ss3.png){:height="700px" width="400px"}
