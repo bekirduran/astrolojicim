@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 # Screen Images
 
-![](/ScreenImages/ss1.png) <img src=/ScreenImages/ss1.png width="100" height="100">
+<img src=/ScreenImages/ss1.png width="350" height="700">
 
 
 
