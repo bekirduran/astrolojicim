@@ -70,6 +70,7 @@ class _BurcDetayState extends State<BurcDetay> {
     );
   }
 
+  // Palette Generator fetch color from the AssetImage
   void colorGenerateFromImage() {
     Future<PaletteGenerator> colorGenerator =
         PaletteGenerator.fromImageProvider(

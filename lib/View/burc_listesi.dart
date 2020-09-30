@@ -17,6 +17,7 @@ class BurcListesi extends StatelessWidget {
     );
   }
 
+  // Body of burcbuilder
   Widget buildListofBurc(Size sreenSize) {
     sreenSize = sreenSize;
     return Container(
@@ -26,6 +27,7 @@ class BurcListesi extends StatelessWidget {
                 rowBurcBuilder(index, sreenSize, context)));
   }
 
+  // Row of burcbuilder func.
   Widget rowBurcBuilder(int index, Size sreenSize, BuildContext context) {
     sreenSize = sreenSize;
     return Container(
@@ -68,6 +70,7 @@ class BurcListesi extends StatelessWidget {
     );
   }
 
+  // Fetch all burc information from the Strings.dart file.
   List<Burc> getAllBurc() {
     List<Burc> myList = [];
 
