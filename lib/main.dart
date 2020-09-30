@@ -1,3 +1,4 @@
+import 'package:astrolojicim/View/burc_detay.dart';
 import 'package:flutter/material.dart';
 
 import 'View/burc_listesi.dart';
@@ -15,7 +16,21 @@ class BurcApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.purple
       ),
-      home: BurcListesi(),
+
+      initialRoute: "/burcListesi",
+      routes: {
+        "/" : (context) => BurcListesi(),
+        "/burcListesi" : (context) => BurcListesi()
+      },
+
+      onGenerateRoute: (RouteSettings settings) {
+        List<String> pathName = settings.name.split("/");
+        if (pathName[1] == "burcDetay"){
+          return MaterialPageRoute(builder: (context) => BurcDetay(int.parse(pathName[2])));
+        }
+        return null;
+      },
+
     );
   }
 

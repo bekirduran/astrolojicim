@@ -4,45 +4,65 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BurcListesi extends StatelessWidget {
+  static List<Burc> listOfBurc;
 
   @override
   Widget build(BuildContext context) {
-    List<Burc> listOfBurc = getAllBurc();
+    listOfBurc = getAllBurc();
     final _screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
       appBar: AppBar(title: Text("Burcunuzu Seçin")),
-      body: buildListofBurc(listOfBurc,_screenSize),
+      body: buildListofBurc(_screenSize),
     );
   }
 
-  Widget buildListofBurc(List<Burc> listOfBurc, Size sreenSize) {
+  Widget buildListofBurc(Size sreenSize) {
     sreenSize = sreenSize;
     return Container(
         child: ListView.builder(
             itemCount: 12,
             itemBuilder: (context, index) =>
-                rowBurcBuilder(listOfBurc, index, sreenSize)));
+                rowBurcBuilder(index, sreenSize, context)));
   }
 
-  Widget rowBurcBuilder(List<Burc> listOfBurc, int index, Size sreenSize) {
+  Widget rowBurcBuilder(int index, Size sreenSize, BuildContext context) {
     sreenSize = sreenSize;
     return Container(
+      alignment: Alignment.center,
       height: sreenSize.height / 5,
       child: Card(
-
-        elevation: 4,
+        shadowColor: Colors.blue.shade900,
+        elevation: 5,
         margin: EdgeInsets.all(sreenSize.height / 40),
         child: ListTile(
-
-          title: Text(listOfBurc[index].burcName),
-          leading: CircleAvatar(
-            child: Image(
-              image: AssetImage(
-                  'images/' + listOfBurc[index].burcSmallPicture + '.png') ,fit: BoxFit.cover,
-            ),
-
+          onTap: ()=> Navigator.pushNamed(context, "/burcDetay/$index"),
+          contentPadding: EdgeInsets.all(sreenSize.height / 35),
+          title: Text(
+            listOfBurc[index].burcName,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 25,
+                color: Colors.deepOrangeAccent,
+                fontWeight: FontWeight.w400),
           ),
+          leading: Image.asset(
+            'images/' + listOfBurc[index].burcSmallPicture + '.png',
+            fit: BoxFit.fill,
+            width: sreenSize.width / 5.5,
+            height: sreenSize.height / 2,
+          ),
+          subtitle: Center(
+            child: Text(
+              listOfBurc[index].burcDate,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 15,
+                color: Colors.blueGrey,
+              ),
+            ),
+          ),
+          trailing: Icon(Icons.arrow_forward_ios,size: 20,color: Colors.blue.shade700,),
         ),
       ),
     );
