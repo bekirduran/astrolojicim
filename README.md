@@ -18,12 +18,12 @@ samples, guidance on mobile development, and a full API reference.
 
 # Screen Images
 
-<img src=/ScreenImages/ss1.png width="350" height="700">
+<img src=/ScreenImages/ss1.png width="400" height="700">
 
 
 
-![](/ScreenImages/ss2.png){:height="700px" width="400px"}
+<img src=/ScreenImages/ss2.png width="400" height="700">
 
 
 
-![](/ScreenImages/ss3.png){:height="700px" width="400px"}
+<img src=/ScreenImages/ss3.png width="400" height="700">
