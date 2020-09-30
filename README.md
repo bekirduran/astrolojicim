@@ -1,7 +1,7 @@
 # astrolojicim
 
 This is a simple horoscope application written in flutter.
-(Burç'lar ile ilgili basit bilgiler içeren dart dilinde flutter ile yazulmış bir uygulamadır. MVC ve 3th part library içermektedir. )
+(Burç'lar ile ilgili basit bilgiler içeren dart dilinde flutter ile yazılmış bir uygulamadır.OOP kurallarına uygun, MVC ve 3th part library içermektedir. )
 
 ## Getting Started
 
